@@ -1,0 +1,35 @@
+
+.header-home {
+   display: grid;
+   grid-template-rows: 400px 1fr;
+
+   &__image {
+      object-fit: cover;
+      height: 100%;
+   }
+
+   &__info {
+      background: rgb(38,33,97);
+      background: linear-gradient(90deg, rgba(38,33,97,1) 0%, rgba(28,117,189,1) 90%);
+      color: $lightColor;
+      font-size: 1.4rem;
+      min-height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &:before {
+         content: '';
+         display: block;
+         position: absolute;
+         right: 0;
+         width: 100%;
+         min-height: 10rem;
+         background-image: url('../images/header-lines.png');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center 0;
+      }
+   }
+}
