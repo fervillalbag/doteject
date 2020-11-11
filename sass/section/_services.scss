@@ -4,9 +4,7 @@
    margin-bottom: 5rem;
 
    &__title {
-      font-weight: 600;
-      color: $primaryColor;
-      font-size: 2rem;
+      @extend .title;
    }
 
    &-main {
@@ -14,6 +12,10 @@
       display: grid;
       grid-template-columns: auto 1fr;
       grid-column-gap: 2rem;
+      
+      @include responsive(768px) {
+         grid-template-columns: 1fr;
+      }
 
       &__button {
          border: none;
@@ -33,6 +35,11 @@
          &:focus,
          &:active {
             outline: none;
+         }
+
+         @include responsive(768px) {
+            grid-template-columns: auto 1fr 1rem;
+            width: 100%;
          }
       }
 

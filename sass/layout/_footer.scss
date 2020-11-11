@@ -1,0 +1,67 @@
+
+.footer {
+   background-color: $secondaryColor;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+
+   &-main {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-column-gap: 8rem;
+      align-items: center;
+
+      &__menu {
+         display: grid;
+         grid-template-columns: repeat(2, 15rem);
+      }
+
+      &__item {
+         margin-bottom: 1rem;
+      }
+
+      &__link {
+         color: $lightColor;
+         display: inline-block;
+         font-size: 1.375rem;
+         text-transform: uppercase;
+      }
+   }
+
+   &-brand {
+      margin-bottom: 3rem;
+
+      &__link {
+         display: inline-block;
+      }
+
+      &__image {
+         width: 16rem;
+      }
+   }
+
+   &-info {
+
+      &__text {
+         display: block;
+         color: $primaryColor;
+         font-weight: 600;
+         font-size: 1.15rem;
+         margin-bottom: 0.3rem;
+      }
+   }
+
+   &-copy {
+
+      &__text {
+         text-align: center;
+         text-transform: uppercase;
+         color: $secondaryColor;
+         font-size: 1.5rem;
+         font-weight: 600;
+
+         a {
+            color: inherit;
+         }
+      }
+   }
+}
