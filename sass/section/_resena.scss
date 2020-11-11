@@ -1,0 +1,58 @@
+
+.review {
+   padding-top: 1rem;
+   padding-bottom: 3rem;
+
+   &__title {
+      @extend .title;
+      text-align: center;
+   }
+
+   &-card {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      
+      &__info {
+         background: rgb(38,33,97);
+         background: linear-gradient(90deg, rgba(28,117,189,0.95) 0%, rgba(38,33,97,1) 80%);
+         color: $lightColor;
+         padding: 2rem 4rem;
+      }
+
+      &__item {
+         font-size: 1.25rem;
+         line-height: 1.6;
+         margin-bottom: 1rem;
+         position: relative;
+
+         &:before {
+            content: '';
+            display: block;
+            width: 0.7rem;
+            height: 0.7rem;
+            background-color: $lightColor;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -1.25rem;
+         }
+      }
+   }
+
+   &-detail {
+      margin-top: 3rem;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &__description {
+         font-size: 1.2rem;
+         line-height: 1.6;
+      }
+   }
+}
