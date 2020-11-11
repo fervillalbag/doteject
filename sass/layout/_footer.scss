@@ -3,6 +3,21 @@
    background-color: $secondaryColor;
    padding-top: 3rem;
    padding-bottom: 3rem;
+   position: relative;
+
+   &:before {
+         content: '';
+         display: block;
+         position: absolute;
+         left: 0;
+         right: 0;
+         width: 100vw;
+         min-height: 100%;
+         background-image: url('../images/header-lines.png');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+      }
 
    &-main {
       display: grid;
