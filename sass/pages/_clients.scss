@@ -30,12 +30,13 @@
       &__input {
          display: block;
          width: 100%;
+         height: 3rem;
          background-color: transparent;
          border: 2px solid $lightColor;
          color: $lightColor;
          font-weight: 600;
          font-size: 1.1rem;
-         padding: 0.75rem 0.5rem;
+         padding: 0.25rem 0.5rem;
 
          &::placeholder {
             color: $lightColor;
@@ -43,6 +44,7 @@
          }
 
          &--textarea {
+            resize: none;
             height: 7rem;
          }
 
