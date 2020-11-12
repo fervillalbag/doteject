@@ -1,0 +1,39 @@
+
+.organization {
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+
+   &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2.5rem 2rem;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   &__item {
+      background: rgb(38,33,97);
+      background: linear-gradient(90deg, rgba(28,117,189,1) 0%, rgba(38,33,97,1) 80%);
+      color: $lightColor;
+      padding: 2rem;
+      position: relative;
+   }
+
+   &__title {
+      margin-top: 0;
+      font-weight: 600;
+   }
+
+   &__description {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin-bottom: 0;
+   }
+
+   &__media {
+      position: absolute;
+      bottom: 0.7rem;
+      right: 0.7rem;
+   }
+}
