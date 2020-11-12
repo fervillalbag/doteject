@@ -1,9 +1,11 @@
 
 .footer {
    background-color: $secondaryColor;
-   padding-top: 3rem;
+   padding-top: 6rem;
    padding-bottom: 3rem;
    position: relative;
+   margin-top: -3rem;
+   z-index: -1;
 
    &:before {
          content: '';

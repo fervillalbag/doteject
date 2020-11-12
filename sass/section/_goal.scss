@@ -1,0 +1,39 @@
+
+.goals {
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+   display: grid;
+   grid-row-gap: 5rem;
+}
+
+.mission {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-column-gap: 3rem;
+   align-items: center;
+
+   &__title {
+      @extend .title;
+   }
+
+   &__description {
+      font-size: 1.25rem;
+      line-height: 1.6;
+   }
+}
+
+.vision {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-column-gap: 3rem;
+   align-items: center;
+
+   &__title {
+      @extend .title;
+   }
+
+   &__description {
+      font-size: 1.25rem;
+      line-height: 1.6;
+   }
+}
