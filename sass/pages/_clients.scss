@@ -1,0 +1,70 @@
+
+
+.client {
+
+   &-contact {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      background: rgb(38,33,97);
+      background: linear-gradient(90deg, rgba(28,117,189,1) 0%, rgba(38,33,97,1) 90%);
+      color: $lightColor;
+
+      &__main {
+         width: 70%;
+         margin-left: auto;
+         margin-right: auto;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-column-gap: 2rem;
+         align-items: center;
+      }
+
+      &__description {
+         font-size: 1.75rem;
+      }
+
+      &__group {
+         margin-bottom: 1.25rem;
+      }
+
+      &__input {
+         display: block;
+         width: 100%;
+         background-color: transparent;
+         border: 2px solid $lightColor;
+         color: $lightColor;
+         font-weight: 600;
+         font-size: 1.1rem;
+         padding: 0.75rem 0.5rem;
+
+         &::placeholder {
+            color: $lightColor;
+            font-weight: 400;
+         }
+
+         &--textarea {
+            height: 7rem;
+         }
+
+         &:focus,
+         &:active {
+            outline: none;
+         }
+      }
+
+      &__button {
+         background-color: $lightColor;
+         padding: 0.6rem 1.5rem;
+         cursor: pointer;
+         border: none;
+         text-transform: uppercase;
+         font-weight: 600;
+         color: $primaryColor;
+
+         &:focus,
+         &:active {
+            outline: none;
+         }
+      }
+   }
+}
