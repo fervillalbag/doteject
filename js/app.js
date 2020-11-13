@@ -29,4 +29,4 @@ novedadesBtnClose.addEventListener('click', () => {
 novedadesOverlay.addEventListener('click', () => {
    novedadesPopup.classList.remove('active');
    novedadesOverlay.classList.remove('active');
-})
+});
