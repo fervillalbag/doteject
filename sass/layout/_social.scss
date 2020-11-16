@@ -1,0 +1,22 @@
+
+.social {
+   background-color: $primaryColor;
+   position: fixed;
+   bottom: 12rem;
+   right: 0;
+   z-index: 10;
+   padding: 0.3rem 0.5rem;
+   border-radius: 3px;
+
+   &__link {
+      color: $lightColor;
+      font-size: 2rem;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 0.25rem;
+
+      &:last-of-type {
+         margin-right: 0;
+      }
+   }
+}
