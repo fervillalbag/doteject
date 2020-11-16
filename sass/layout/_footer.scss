@@ -23,6 +23,11 @@
       background-repeat: no-repeat;
       background-size: 300px;
       background-position: right top;
+      z-index: -1;
+
+      @include responsive(768px) {
+         display: none;
+      }
    }
 
    &:after {
@@ -37,6 +42,11 @@
       background-repeat: no-repeat;
       background-size: 300px;
       background-position: left bottom;
+      z-index: -1;
+
+      @include responsive(768px) {
+         display: none;
+      }
    }
 
    &-main {
@@ -45,9 +55,19 @@
       grid-column-gap: 8rem;
       align-items: center;
 
+      @include responsive(768px) {
+         grid-template-columns: 1fr;
+         grid-gap: 3rem 0;
+      }
+
       &__menu {
          display: grid;
          grid-template-columns: repeat(2, 15rem);
+
+         @include responsive(768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1rem;
+         }
       }
 
       &__item {

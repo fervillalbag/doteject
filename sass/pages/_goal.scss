@@ -1,7 +1,7 @@
 
 .goals {
    padding-top: 3rem;
-   padding-bottom: 3rem;
+   padding-bottom: 4rem;
    display: grid;
    grid-row-gap: 5rem;
 }
@@ -10,7 +10,10 @@
    display: grid;
    grid-template-columns: 2fr 1fr;
    grid-column-gap: 3rem;
-   align-items: center;
+
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+   }
 
    &__title {
       @extend .title;
@@ -19,6 +22,10 @@
    &__description {
       font-size: 1.25rem;
       line-height: 1.6;
+   }
+
+   &__media {
+      margin-top: 3rem;
    }
 }
 
@@ -26,7 +33,11 @@
    display: grid;
    grid-template-columns: 1fr 2fr;
    grid-column-gap: 3rem;
-   align-items: center;
+
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+      margin-top: 3rem;
+   }
 
    &__title {
       @extend .title;
@@ -35,5 +46,9 @@
    &__description {
       font-size: 1.25rem;
       line-height: 1.6;
+   }
+
+   &__media {
+      margin-top: 3rem;
    }
 }

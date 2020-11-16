@@ -21,6 +21,14 @@
       align-items: center;
       grid-gap: 2rem 1rem;
       justify-items: center;
+
+      @include responsive(768px) {
+         grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include responsive(480px) {
+         grid-template-columns: repeat(3, 1fr);
+      }
    }
    
    &__image {

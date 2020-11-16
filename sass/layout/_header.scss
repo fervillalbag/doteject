@@ -19,6 +19,10 @@
       justify-content: center;
       position: relative;
 
+      @include responsive(768px) {
+         padding: 2rem;
+      }
+
       &:before {
          content: '';
          display: block;
