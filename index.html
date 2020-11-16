@@ -260,7 +260,7 @@
             </p>
          </div>
          <div class="join__action">
-            <a href="#" class="join__button">Postularte</a>
+            <span class="novedades__link join__button">Postularte</span>
             <a href="#" class="join__button">Bolsa de Trabajo</a>
          </div>
       </div>
@@ -371,18 +371,18 @@
                <ul class="footer-main__menu">
                   <div>
                      <li class="footer-main__item">
-                        <a href="#" class="footer-main__link">Novedades</a>
+                        <a href="./novedades.html" class="footer-main__link">Novedades</a>
                      </li>
                      <li class="footer-main__item">
                         <a href="#" class="footer-main__link">Bolsa de Trabajo</a>
                      </li>
                      <li class="footer-main__item">
-                        <a href="#" class="footer-main__link">Postulate</a>
+                        <button class="footer-main__link novedades__link novedades__link--footer">Postulate</button>
                      </li>
                   </div>
                   <div>
                      <li class="footer-main__item">
-                        <a href="#" class="footer-main__link">Contacto</a>
+                        <a href="./contacto.html" class="footer-main__link">Contacto</a>
                      </li>
                      <li class="footer-main__item">
                         <a href="#" class="footer-main__link">Blog</a>
@@ -395,6 +395,46 @@
    </footer>
    <div class="footer-copy">
       <p class="footer-copy__text">Diseño y desarrollo por <a href="" target="_blank">Fincreativo</a></p>
+   </div>
+
+   <div class="novedades-card">
+      <div class="novedades__overlay" id="novedadesOverlay"></div>
+      <div class="novedades-popup" id="novedadesPopup">
+         <div class="novedades-close" id="novedadesBtnClose">
+            <span class="novedades-close__icon">
+               <i class="fas fa-times"></i>
+            </span>
+         </div>
+         <div class="novedades-form__header">
+            <h2 class="novedades-form__title">Postulate</h2>
+         </div>
+         <h3 class="novedades__subtitle">Completa estos datos</h3>
+         <form class="novedades-form">
+            <div class="novedades-form__group">
+               <span class="novedades-form__name">Nombre y Apellido</span>
+               <input type="text" class="novedades-form__input">
+            </div>
+            <div class="novedades-form__group">
+               <span class="novedades-form__name">Número de Teléfono</span>
+               <input type="text" class="novedades-form__input">
+            </div>
+            <div class="novedades-form__group">
+               <span class="novedades-form__name">E-mail</span>
+               <input type="text" class="novedades-form__input">
+            </div>
+            <div class="novedades-form__group">
+               <span class="novedades-form__name">Cargo al que te postulas</span>
+               <textarea class="novedades-form__input novedades-form__input--textarea"></textarea>
+            </div>
+            <div class="novedades-form__group">
+               <a href="" class="novedades-form__link">Adjuntar Currículum Vitae</a>
+               <a href="" class="novedades-form__link">Adjuntar otro(s) documento(s)</a>
+            </div>
+            <div class="novedades-form__group novedades-form__group--action">
+               <button class="novedades-form__button">Enviar</button>
+            </div>
+         </form>
+      </div>
    </div>
 
    <script src="./js/app.js"></script>

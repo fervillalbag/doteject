@@ -65,14 +65,14 @@
    }
 
    &__button {
-      display: inline-block;
-      padding: 0.5rem 1.5rem;
-      background-color: transparent;
-      border: 2px solid $lightColor;
-      font-weight: 600;
-      color: $lightColor;
-      text-align: center;
-      margin-left: 1rem;
+      display: inline-block !important;
+      padding: 0.5rem 1.5rem !important;
+      background-color: transparent !important;
+      border: 2px solid $lightColor !important;
+      font-weight: 600 !important;
+      color: $lightColor !important;
+      text-align: center !important;
+      margin-left: 1rem !important;
 
       @include responsive(1100px) {
          margin-top: 1rem;
