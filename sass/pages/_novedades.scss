@@ -65,6 +65,27 @@
          background-color: lighten($color: $primaryColor, $amount: 5);
       }
    }
+
+   &__action {
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem;
+   }
+
+   &__button {
+      background-color: $primaryColor;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      display: inline-block;
+      cursor: pointer;
+      color: $lightColor;
+      font-size: 1.25rem;
+
+      &:focus,
+      &:active {
+         outline: none;
+      }
+   }
 }
 
 .novedades {
