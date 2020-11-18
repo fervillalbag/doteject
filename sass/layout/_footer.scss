@@ -9,6 +9,7 @@
    &-top {
       margin-top: -3rem;
       padding-top: 6rem;
+      z-index: -1;
    }
 
    &:before {
@@ -98,7 +99,7 @@
 
       &__text {
          display: block;
-         color: $primaryColor;
+         color: #48E5FF;
          font-weight: 600;
          font-size: 1.15rem;
          margin-bottom: 0.3rem;

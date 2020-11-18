@@ -3,11 +3,49 @@
    padding-top: 4rem;
    padding-bottom: 6rem;
 
+   &__header {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem;
+   }
+   
+   &__title {
+      font-weight: 600;
+      color: $primaryColor;
+      font-size: 2.25rem;
+      margin-top: 0;
+      position: relative;
+
+      &:before {
+         content: '';
+         display: block;
+         width: 340px;
+         height: 0.25rem;
+         border-radius: 1rem;
+         background-color: $primaryColor;
+         position: absolute;
+         bottom: -0.85rem;
+         left: 0;
+
+         @include responsive(480px) {
+            width: 240px;
+         }
+      }
+   }
+
+   &__subtitle {
+      font-weight: 400;
+      color: lighten($color: $darkColor, $amount: 30);
+      display: block;
+      font-size: 1.25rem;
+   }
+
    &__main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 2rem;
-      width: 70%;
+      width: 85%;
       margin-left: auto;
       margin-right: auto;
 

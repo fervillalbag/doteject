@@ -24,6 +24,10 @@
          background-repeat: no-repeat;
          background-position: center bottom;
          z-index: 1;
+
+         @include responsive(768px) {
+            display: none;
+         }
       }
    }
 

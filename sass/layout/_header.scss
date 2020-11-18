@@ -27,13 +27,30 @@
          content: '';
          display: block;
          position: absolute;
+         top: 0;
          right: 0;
          width: 100%;
-         min-height: 12rem;
-         background-image: url('../images/header-lines.png');
+         min-height: 100%;
+         background-image: url('../images/line-right.png');
          background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center -5rem;
+         background-size: 300px;
+         background-position: right top;
+         z-index: 1;
+      }
+
+      &:after {
+         content: '';
+         display: block;
+         position: absolute;
+         bottom: -11rem;
+         left: -7.5rem;
+         width: 100%;
+         min-height: 100%;
+         background-image: url('../images/line-left.png');
+         background-repeat: no-repeat;
+         background-size: 300px;
+         background-position: 0 center;
+         z-index: 1;
       }
    }
 }
