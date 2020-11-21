@@ -5,6 +5,10 @@
    display: grid;
    justify-content: center !important;
    align-items: flex-start !important;
+   background-color: $secondaryColor;
+   color: $lightColor;
+   padding: 2rem 1rem;
+   width: 60%;
 }
 
 .services {
@@ -65,13 +69,23 @@
       }
    }
 
+   &-container {
+      position: relative;
+   }
+
    &-content {
       display: grid;
       place-items: center;
 
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 300;
       line-height: 1.6;
-      padding-top: 4rem;
+
+      &__image {
+         margin-top: -3rem;
+         margin-left: 4rem;
+         position: relative;
+         z-index: -1;
+      }
    }
 }

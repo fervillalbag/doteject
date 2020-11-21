@@ -52,10 +52,13 @@ novedadesOverlay.addEventListener('click', () => {
 
 const services01 = document.querySelector('#services01');
 const servicesBody = document.querySelector('#servicesBody');
+const servicesBodyImage = document.querySelector('#servicesBodyImage');
+const defaultImage = document.querySelector('#defaultImage');
 
 services01.addEventListener('click', () => {
-   servicesBody.textContent = 'Buscamos y seleccionamos a las personas que mejor se ajustan al perfil del cargo requerido por la organización. Escogemos y sugerimos una terna de postulantes con las mejores competencias aptitudinales y cognitivas, para lo cual recurrimos a nuestra base de datos, contactos y referencias laborales, además de realizar publicaciones en periódicos, instituciones educativas, y otros.';
-   servicesBody.classList.add('content-text')
+   servicesBody.textContent = 'Buscamos y seleccionamos a las personas que mejor se ajustan al perfil del cargo requerido por la organización.Escogemos y sugerimos una terna de postulantes con las mejores competencias aptitudinales y cognitivas, para lo cual recurrimos a nuestra base de datos, contactos y referencias laborales, además de realizar publicaciones en periódicos, instituciones educativas, y otros.';
+   servicesBody.classList.add('content-text');
+   servicesBodyImage.innerHTML = '<img src="./images/busqueda-seleccion.jpg" class="services-container__image">'
    window.scroll(0, 646);
 });
 
