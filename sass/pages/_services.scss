@@ -1,14 +1,35 @@
 
 /* Utilities */
 
+.hidden {
+   display: none;
+}
+
 .content-text {
    display: grid;
    justify-content: center !important;
    align-items: flex-start !important;
    background-color: $secondaryColor;
    color: $lightColor;
-   padding: 2rem 1rem;
+   padding: 3rem 2rem;
    width: 60%;
+   line-height: 1.4;
+   background: rgb(38,33,97);
+   background: linear-gradient(90deg, rgba(28,117,189,1) 0%, rgba(38,33,97,1) 80%);
+   position: relative;
+   
+   &__icon {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      width: 3rem;
+   }
+
+   &__image {
+      max-width: 35rem;
+      margin-left: 2rem;
+      margin-top: -5rem;
+   }
 }
 
 .services {
