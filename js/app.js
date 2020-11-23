@@ -66,6 +66,9 @@ services01.addEventListener('click', () => {
    `;
    defaultImage.classList.add('hidden');
    servicesBody.innerHTML = htmlBody;
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -80,6 +83,9 @@ services02.addEventListener('click', () => {
       <img src="./images/busqueda-seleccion.jpg" alt="" class="content-text__image">
    `;
    servicesBody.innerHTML = htmlBody;
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -95,6 +101,9 @@ services03.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -110,6 +119,9 @@ services04.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -125,6 +137,9 @@ services05.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -140,6 +155,9 @@ services06.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -155,6 +173,9 @@ services07.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -170,6 +191,9 @@ services08.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -185,6 +209,9 @@ services09.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -200,6 +227,9 @@ services10.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
 
@@ -215,5 +245,8 @@ services11.addEventListener('click', () => {
    `;
    servicesBody.innerHTML = htmlBody;
    defaultImage.classList.add('hidden');
+   if (window.innerWidth <= 768) {
+      window.scroll(0, 1760);
+   }
    window.scroll(0, 646);
 });
