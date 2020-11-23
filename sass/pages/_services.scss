@@ -17,12 +17,22 @@
    background: rgb(38,33,97);
    background: linear-gradient(90deg, rgba(28,117,189,1) 0%, rgba(38,33,97,1) 80%);
    position: relative;
+   z-index: 10;
+
+   @include responsive(992px) {
+      width: 90%;
+   }
+
+   &__description {
+      z-index: 10;
+   }
    
    &__icon {
       position: absolute;
       bottom: 0.75rem;
       right: 0.75rem;
       width: 3rem;
+      z-index: -1;
    }
 
    &__image {
