@@ -79,13 +79,16 @@
       }
 
       &__link {
-         display: block;
-         color: $grayColor;
+         background-color: transparent !important;
+         display: block !important;
+         text-transform: capitalize !important;
+         color: $grayColor !important;
          font-weight: 600;
-         font-size: 1.1rem;
-         padding: 0.25rem 0;
+         font-size: 1.1rem !important;
+         padding: 0.25rem 0 !important;
          transition: color 300ms ease;
          cursor: pointer;
+         margin-top: 0 !important;
 
          &:hover {
             color: darken($color: $grayColor, $amount: 15);
