@@ -90,6 +90,10 @@
          cursor: pointer;
          margin-top: 0 !important;
 
+         &.active {
+            color: $primaryColor !important;
+         }
+
          &:hover {
             color: darken($color: $grayColor, $amount: 15);
          }
