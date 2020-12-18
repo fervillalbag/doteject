@@ -31,6 +31,8 @@
    }
    
    &__image {
-      width: 4rem;
+      width: 5.5rem;
+      height: 100%;
+      object-fit: cover;
    }
 }
