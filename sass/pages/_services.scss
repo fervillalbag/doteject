@@ -107,6 +107,31 @@
 
    &-container {
       position: relative;
+
+      &--default {
+         @include responsive(768px) {
+            display: none;
+         }
+      }
+
+      &--mobile {
+         padding-top: 0;
+         padding-bottom: 0;
+         height: 0;
+         overflow: hidden;
+         font-size: 1.25rem;
+
+         &.active {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            height: auto;
+            overflow: visible;
+         }
+         
+         @media screen and (min-width: 768px) {
+            display: none;
+         }
+      }
    }
 
    &-content {
