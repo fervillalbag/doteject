@@ -5,12 +5,14 @@ const button3 = document.querySelector('#button3');
 const button4 = document.querySelector('#button4');
 const button5 = document.querySelector('#button5');
 const button6 = document.querySelector('#button6');
+
 const modal1 = document.querySelector('#modal1');
 const modal2 = document.querySelector('#modal2');
 const modal3 = document.querySelector('#modal3');
 const modal4 = document.querySelector('#modal4');
 const modal5 = document.querySelector('#modal5');
 const modal6 = document.querySelector('#modal6');
+
 const overlay = document.querySelector('.overlay');
 
 button1.addEventListener('click', () => {
