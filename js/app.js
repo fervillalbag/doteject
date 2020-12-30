@@ -32,7 +32,8 @@ const novedadesPopup = document.querySelector('#novedadesPopup');
 const novedadesOverlay = document.querySelector('#novedadesOverlay');
 
 novedadesBtnPost.forEach(btnPost => {
-   btnPost.addEventListener('click', () => {
+   btnPost.addEventListener('click', (e) => {
+      e.preventDefault();
       novedadesOverlay.classList.add('active');
       novedadesPopup.classList.add('active');
    });
