@@ -52,3 +52,19 @@
       margin-top: 3rem;
    }
 }
+
+b {
+   font-size: 1.25rem;
+   margin-bottom: 1rem;
+   display: block;
+}
+
+.valores-list {
+   list-style: disc;
+   font-size: 1.25rem;
+   margin-left: 2rem;
+
+   li {
+      margin-bottom: 0.5rem;
+   }
+}
