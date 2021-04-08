@@ -4,12 +4,15 @@
    padding-bottom: 4rem;
    display: grid;
    grid-row-gap: 5rem;
+
+   &.container {
+      max-width: 900px;
+   }
 }
 
 .mission {
    display: grid;
-   grid-template-columns: 2fr 1fr;
-   grid-column-gap: 3rem;
+   grid-template-columns: repeat(2, 1fr);
 
    @include responsive(768px) {
       grid-template-columns: 1fr;
@@ -26,13 +29,14 @@
 
    &__media {
       margin-top: 3rem;
+      width: 20rem;
+      margin-left: auto;
    }
 }
 
 .vision {
    display: grid;
-   grid-template-columns: 1fr 2fr;
-   grid-column-gap: 3rem;
+   grid-template-columns: repeat(2, 1fr);
 
    @include responsive(768px) {
       grid-template-columns: 1fr;
@@ -50,6 +54,8 @@
 
    &__media {
       margin-top: 3rem;
+      width: 20rem;
+      // margin: 0 auto;
    }
 }
 
