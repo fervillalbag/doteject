@@ -3,6 +3,10 @@
    display: grid;
    grid-template-rows: 400px 1fr;
 
+   @include responsive(768px) {
+      grid-template-rows: 10rem 1fr;
+   }
+   
    &__image {
       object-fit: cover;
       height: 100%;
